@@ -1,0 +1,128 @@
+/* Erp.css */
+
+
+.diagram-box > h2 {
+  font-size: 24px;
+}
+
+/* Styling for the line between boxes */
+.diagram-line {
+  display: none; /* Hide lines on all screens */
+}
+
+/* Additional styling for the header and paragraph */
+.ERP__hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Change to min-height to prevent overflowing */
+  background-image: url(/public/Photo-site/9019796.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 40px 0; /* Increase the vertical padding */
+}
+
+.ERP__hero-container > h1 {
+  color: #fff;
+  font-size: 36px; /* Adjust the font size for smaller screens */
+  margin: 10px; /* Adjust margin for smaller screens */
+}
+
+.ERP__hero-container > p {
+  margin-top: 8px;
+  color: #fff;
+  font-size: 18px; /* Adjust the font size for smaller screens */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Styling for the diagramme div that contains the modules */
+.diagramme {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+  align-items: center; /* Center vertically */
+  animation: slideInBottom 1s ease-in; /* Simplified animation */
+}
+
+/* Media query for screens smaller than 768px */
+/* Erp.css */
+
+/* Style for each diagram box */
+.diagram-box {
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  margin: 10px; /* Add some margin between boxes */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center text in boxes */
+}
+
+.diagram-box > h2 {
+  font-size: 24px;
+}
+
+/* Styling for the line between boxes */
+.diagram-line {
+  display: none; /* Hide lines on all screens */
+}
+
+/* Additional styling for the header and paragraph */
+.ERP__hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Change to min-height to prevent overflowing */
+  background-image: url(/public/Photo-site/9019796.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 40px 0; /* Increase the vertical padding */
+}
+
+.ERP__hero-container > h1 {
+  color: #fff;
+  font-size: 72px; /* Adjust the font size for smaller screens */
+  margin: 10px; /* Adjust margin for smaller screens */
+}
+
+.ERP__hero-container > p {
+  margin-top: 32px;
+  color: #fff;
+  font-size: 18px; /* Adjust the font size for smaller screens */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Styling for the diagramme div that contains the modules */
+.diagramme {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+  align-items: center; /* Center vertically */
+  animation: slideInBottom 1s ease-in; /* Simplified animation */
+}
+
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  .diagramme {
+    grid-template-columns: repeat(1, 1fr); /* Two boxes per row */
+    gap: 10px; /* Reduce gap for smaller screens */
+    padding: 0 10px; /* Add some padding to prevent overlapping */
+  }
+
+  .ERP__hero-container {
+    min-height: 170vh;
+  }
+
+  .ERP__hero-container > h1 {
+    font-size: 48px; /* Adjust font size for smaller screens */
+  }
+
+  .ERP__hero-container > p {
+    margin-top: 16px; /* Adjust margin for smaller screens */
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}
+

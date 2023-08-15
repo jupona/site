@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+/* Common styles */
+:root {
+    --container-color: #f5f5f5;
+    --title-color: #333;
+    --small-font-size: 1.5rem;
+    --tiny-font-size: 1.25rem;
+    --font-medium: 500;
+    --mb-0-5: 0.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+  }
+
+  .About__container {
+    background-image: url('/public/Photo-site/4931029.jpg');
+    background-size: cover; /* Pour que l'image couvre toute la section */
+    background-position: center; /* Pour centrer l'image */
+    min-height: 100vh;
+  }
+
+  /* About Me Section Styles */x
+  .section__title {
+    font-size: 72px;
+    color: var(--title-color);
+    padding: 50px 0 0 0;
+    
+  }
+  
+  .section__subtitle {
+    display: block;
+    color: var(--title-color);
+    font-size: 20px;
+    font-family: Poppins, sans-serif;
+    margin-top: 20px;
+  }
+  
+  .section__title,
+  .section__subtitle {
+    text-align: center;
+  }
+  
+  /* Main styles for About section */
+  .about__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  column-gap: 4rem;
+  padding: 0 2rem;
+  margin-top: 6rem;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .about__img {
+    width: 350px;
+    border-radius: 1.5rem;
+    justify-self: center;
+    animation-name: slideInTopWithBounce;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out; /* Use ease-in-out for a smoother bounce effect */
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  }
+  
+  .about__info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    margin-bottom: var(--mb-2);
+  }
+  
+  .about__box {
+    flex: 1; /* Distribute available space evenly among the boxes */
+    background-color: var(--container-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.75rem;
+    text-align: center;
+    padding: 1rem 1.25rem;
+  }
+  
+  /* Add specific styles for the icons */
+  .about__icon {
+    font-size: 2rem; /* Adjust the icon size */
+    color: var(--title-color);
+    margin-bottom: var(--mb-0-5);
+  }
+
+  .button__icon {
+    font-size: 1.5rem;
+    color: white;
+  }
+  
+  .about__title {
+    font-size: 1.2rem;
+    font-weight: var(--font-medium);
+    font-family: Poppins, sans-serif;
+  }
+  
+  .about__subtitle {
+    font-size: 1rem;
+    font-family: Poppins, sans-serif;
+  }
+  
+  .about__description {
+    padding: 0 4rem 0 0;
+    margin-bottom: var(--mb-2-5);
+    font-family: Poppins, sans-serif;
+    color: grey;
+
+  }
+
+  @keyframes slideInTopWithBounce {
+    from {
+      transform: translateX(-100%);
+    }
+    to
+    {
+      transform: translateX(0); /* Bouncing back to the final position */
+    }
+  }
+  
+  /* Media Queries */
+@media screen and (max-width: 992px) {
+  .about__container {
+    grid-template-columns: 1fr;
+    row-gap: 2.5rem;
+    padding: 0 2rem;
+  }
+  
+  .about__img {
+    width: 220px;
+  }
+  
+  .about__box {
+    padding: 0.75rem 0.5rem;
+  }
+  
+  .about__data {
+    text-align: center;
+  }
+  .about__description {
+    padding: 0;
+  }
+
+  .button--flex {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .about__info {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

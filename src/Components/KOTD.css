@@ -1,0 +1,89 @@
+.KOTD__hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(/public/Photo-site/9019796.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.KOTD__hero-container > h1 {
+    color: #fff;
+    font-size: 72px;
+    margin-top: -100px;
+  }
+
+.KOTD__hero-container > p {
+    margin-top: 8px;
+    color: #fff;
+    font-size: 32px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+  }
+
+.diagram-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+    animation-name: slideInBottom;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  }
+  
+  .block {
+    background-color: #3d63a0;
+    color: #fff;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .block:hover {
+    transform: translateY(-5px);
+  }
+
+  @keyframes slideInBottom {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .KOTD__hero-container > h1 {
+      font-size: 36px; /* Decrease font size for smaller screens */
+      margin-top: -50px; /* Adjusted margin for smaller screens */
+    }
+  
+    .KOTD__hero-container > p {
+      font-size: 24px; /* Decrease font size for smaller screens */
+      margin-top: 5px; /* Adjusted margin for smaller screens */
+    }
+  
+    .diagram-container {
+      grid-template-columns: repeat(1, 1fr); /* Single column for smaller screens */
+      gap: 10px; /* Reduced gap for smaller screens */
+      margin-top: 20px; /* Adjusted margin for smaller screens */
+    }
+  
+    .block {
+      font-size: 14px; /* Decrease font size for smaller screens */
+      padding: 15px; /* Reduced padding for smaller screens */
+    }
+  }  

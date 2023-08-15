@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Montserrat:wght@300&family=Saira&display=swap');
+
+/* Apply CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.co2-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Changed to min-height */
+  background-image: url("/public/Photo-site/9019796.jpg");
+  background-size: cover;
+  background-position: center;
+  flex-wrap: wrap;
+  font-family: 'Montserrat', sans-serif; /* Apply the imported font */
+}
+
+.co2-container h1 {
+  color: #fff;
+  font-size: 72px; /* Adjust the font size */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  margin-top: 120px; /* Adjusted margin */
+}
+
+.co2-container p {
+  color: #fff;
+  font-size: 24px; /* Adjust the font size */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  margin-top: 10px; /* Adjusted margin */
+}
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 40px 0; /* Added margin */
+  animation-name: slideInBottom;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+
+.box {
+  width: 100%; /* Adjusted width */
+  max-width: 400px; /* Added max-width */
+  margin: 20px;
+  text-align: center;
+  background-color: #f7f7f7;
+  border: 2px solid #d1d1d1;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.box ul li {
+  font-size: 16px;
+  color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.box p {
+  font-size: 16px;
+  color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.box-text {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-style: bold;
+}
+
+.Bottom-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif; /* Apply the imported font */
+  margin-top: 100px; /* Adjusted margin */
+  
+}
+
+.box2 {
+  width: 100%; /* Adjusted width */
+  max-width: 400px; /* Added max-width */
+  text-align: center;
+  color: white;
+}
+
+.box3 {
+  width: 100%; /* Adjusted width */
+  max-width: 800px; /* Added max-width */
+  text-align: center;
+  color: white;
+  
+}
+
+#explained {
+  text-align: justify;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.Bottom-page img {
+  width: 75%;
+  height: auto;
+    border-radius: 7px;
+    padding: 20px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes slideInBottom {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* ... Other styles ... */
+
+@media screen and (max-width: 768px) {
+  .co2-container h1 {
+    font-size: 36px; /* Decrease font size for smaller screens */
+    margin-top: 80px; /* Adjusted margin for smaller screens */
+  }
+
+  .co2-container p {
+    font-size: 15px; /* Decrease font size for smaller screens */
+    margin-top: 5px; /* Adjusted margin for smaller screens */
+  }
+
+  .box {
+    max-width: 100%; /* Full width for smaller screens */
+  }
+
+  .box ul li {
+    font-size: 14px; /* Decrease font size for smaller screens */
+  }
+
+  .Bottom-page {
+    flex-direction: column; /* Stack content vertically for smaller screens */
+    margin-top: 50px; /* Adjusted margin for smaller screens */
+  }
+
+  .box2, .box3 {
+    width: 100%; /* Full width for smaller screens */
+    max-width: 100%; /* Full width for smaller screens */
+    text-align: center;
+    margin: 10px 0; /* Adjusted margin for smaller screens */
+  }
+
+  #explained {
+    font-size: 14px; /* Decrease font size for smaller screens */
+    text-align: justify;
+    padding: 10px; /* Adjusted padding for smaller screens */
+  }
+
+  .Bottom-page img {
+    width: 75%; /* Decrease image width for smaller screens */
+    height: auto;
+    border-radius: 7px;
+    padding: 10px; /* Adjusted padding for smaller screens */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  }
+}

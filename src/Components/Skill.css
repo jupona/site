@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+/* Common styles */
+:root {
+    --container-color: #f5f5f5;
+    --title-color: #333;
+    --small-font-size: 1.5rem;
+    --tiny-font-size: 1.25rem;
+    --normal-font-size: 1.75rem;
+    --font-medium: 500;
+    --mb-0-5: 0.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-1-5: 1.5rem;
+  }
+
+.skills__section {
+    background-image: url('/public/Photo-site/4931029.jpg');
+    background-size: cover; /* Pour que l'image couvre toute la section */
+    background-position: center; /* Pour centrer l'image */
+    min-height: 100vh;
+    
+}
+
+.section__subtitle {
+    display: block;
+    color: var(--title-color);
+    font-size: 20px;
+    font-family: Poppins, sans-serif;
+    margin-top: 50px;
+}
+
+.skills__container {
+    margin-top: 20px;
+    display: flex; /* Add this line */
+    flex-wrap: wrap; /* Add this line */
+    justify-content: center;
+    animation-name: slideInBottom;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
+.skills__content {
+    background-color: var(--container-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 2rem 4rem;
+    border-radius: 1.25rem;
+    font-family: Poppins, sans-serif;
+    width: 250px;
+    margin: 0 1rem;
+}
+
+.skills__title {
+    font-size: 1.15rem;
+    font-weight: var(--font-medium);
+    text-align: center;
+    margin-bottom: var(--mb-1-5);
+}
+
+.skills__box {
+    display: flex;
+    justify-content: center;
+    column-gap: 2.5rem;
+}
+
+.skills__group {
+    display: grid;
+    align-items: flex-start;
+    row-gap: 1rem;
+}
+
+.skills__data {
+    display: flex;
+    column-gap: 0.5rem;
+}
+
+.badge__icon {
+    font-size: 1rem;
+    color: var(--title-color);
+}
+
+.skills__name {
+    font-size: 1rem;
+    font-weight: var(--font-medium);
+    line-height: 18px;
+}
+
+.skills__level {
+    font-size: 0.75rem;
+}
+
+@keyframes slideInBottom {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+/* Media Queries */
+@media screen and (max-width: 992px) {
+    .skills__container {
+        grid-template-columns: max-content;
+        row-gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .skills__container {
+        grid-template-columns: 1fr;
+    }
+
+    .skills__content {
+        padding: 1.5rem;
+    }
+
+    .skills__box {
+        column-gap: 1.25rem;
+    }
+
+    .skills__name {
+        font-size: var(--small-font-size);
+    }
+}

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/site/static/css/main.fcc974cb.css",
-    "main.js": "/site/static/js/main.53e5db64.js",
+    "main.css": "/site/static/css/main.3d4d3a5f.css",
+    "main.js": "/site/static/js/main.89105200.js",
     "static/media/Mobile_projet.png": "/site/static/media/Mobile_projet.f00d1083b6f796e34dfb.png",
     "static/media/Mobile_home.png": "/site/static/media/Mobile_home.396f9d7cd9afe04fcd5e.png",
     "static/media/abstract-geometric-computer-wallpaper-white-border-connecting-dots-digital-technology-vector-design.jpg": "/site/static/media/abstract-geometric-computer-wallpaper-white-border-connecting-dots-digital-technology-vector-design.39d5e9bcbef92ec09cfd.jpg",
@@ -12,11 +12,11 @@
     "static/media/CV_Julien.pdf": "/site/static/media/CV_Julien.5dc981f6bcff18996aeb.pdf",
     "static/media/project-management.png": "/site/static/media/project-management.e0da2530164713549545.png",
     "index.html": "/site/index.html",
-    "main.fcc974cb.css.map": "/site/static/css/main.fcc974cb.css.map",
-    "main.53e5db64.js.map": "/site/static/js/main.53e5db64.js.map"
+    "main.3d4d3a5f.css.map": "/site/static/css/main.3d4d3a5f.css.map",
+    "main.89105200.js.map": "/site/static/js/main.89105200.js.map"
   },
   "entrypoints": [
-    "static/css/main.fcc974cb.css",
-    "static/js/main.53e5db64.js"
+    "static/css/main.3d4d3a5f.css",
+    "static/js/main.89105200.js"
   ]
 }
